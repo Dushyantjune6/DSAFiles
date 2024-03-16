@@ -1,7 +1,7 @@
 import java.util.*;
 public class IndexOfElementInInfiniteArray {
     public static int binarySearch(int[] arr, int target, int start, int end){
-        //this method runs on the basis of start and end values shared by ans method
+        //this method runs on the basis of start and end values shared by findRange method
         while(start <= end){
             int mid = start+(end-start)/2;
             if(target > arr[mid]){
@@ -15,13 +15,13 @@ public class IndexOfElementInInfiniteArray {
         return -1;
     }
     public static int findRange(int[] arr, int target){
-        //This method will keep on doubling the size of the range unless the target comes inder it
-        //i.e. target < arr[end]
+        //This method will keep on doubling the size of the range unless the target comes under it
+        //i.e. target needs to be lesser than arr[end]
         int start =0, end =1;
         while(target > arr[end]){
-            int temp = end; //storing index of old end
-            end = end+(end-start+1)*2; //size of new end will be old end + (end-start+1)*2 which is 2*size of current range
-            start = temp+1; //new start will be old end+1
+            int temp = end;             //storing index of old end
+            end = end+(end-start+1)*2;  //size of new end will be old end + (end-start+1)*2 which is 2*size of current range
+            start = temp+1;             //new start will be old end+1
         }
         return binarySearch(arr, target, start, end);
     }
