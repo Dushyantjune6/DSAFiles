@@ -18,7 +18,7 @@ public class FloorProblem {
             }else if(target < arr[mid]){
                 end = mid-1;
             }else{
-                return arr[mid];
+                return arr[mid-1];  //Returning the element smaller than the target element
             }
         }
         return arr[end];
