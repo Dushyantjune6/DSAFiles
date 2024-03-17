@@ -8,7 +8,7 @@ public static int binarySearch(int [] arr){
         int mid = start+(end-start)/2;
         if(arr[mid] > arr[mid+1]){            //We're in the Decreasing side i.e. arr[7] > arr[8]
                    end = mid;                //end may be the answer that's why we're not taking end = mid-1 as mid is > mid+1
-                                            // End your range and seek for element in right
+                                            // End your range and seek for element in current range
                                             // Search in the left for bigger possible ans
 
         }else {                               //We're in the Increasing side i.e. arr[2] < arr[3]
