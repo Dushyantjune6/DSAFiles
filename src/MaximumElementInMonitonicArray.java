@@ -26,7 +26,6 @@ public static int binarySearch(int [] arr){
 }
 public static void main(String[] args){
     int[] arr = {0,1,2,3,14,15,19,22,23,29,27,25,23,22,11,9,3,0};
-    Scanner sc = new Scanner(System.in);
     System.out.println("Max Index: "+binarySearch(arr)+"\nMax value: "+arr[binarySearch(arr)]);
 }
 
