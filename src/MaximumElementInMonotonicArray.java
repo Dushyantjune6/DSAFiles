@@ -1,10 +1,10 @@
 import java.util.*;
-public class MaximumElementInMonitonicArray {
+public class MaximumElementInMonotonicArray {
 public static int binarySearch(int [] arr){
 
     int start = 0;
     int end = arr.length-1;
-    while(start < end){                       //This loop will keep on searching for the biggest element
+    while(start <= end){                       //This loop will keep on searching for the biggest element
         int mid = start+(end-start)/2;
         if(arr[mid] > arr[mid+1]){            //We're in the Decreasing side i.e. arr[7] > arr[8]
                    end = mid;                //end may be the answer that's why we're not taking end = mid-1 as mid is > mid+1
