@@ -24,3 +24,8 @@ public class MinimumIndexInMountainArray {
             System.out.println("Min Index: "+binarySearch(arr)+"\nMin value: "+arr[binarySearch(arr)]);
         }
 }
+
+
+/*** Explanation for this code is same as https://github.com/Dushyantjune6/DSAFiles/blob/main/src/MaximumElementInMonitonicArray.java
+We've just reverted the comparison conditions which now will return the minimum element's index
+    ***/

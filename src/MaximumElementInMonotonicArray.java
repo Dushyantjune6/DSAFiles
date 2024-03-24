@@ -8,7 +8,7 @@ public static int binarySearch(int [] arr){
         int mid = start+(end-start)/2;
         if(arr[mid] > arr[mid+1]){            //We're in the Decreasing side i.e. arr[7] > arr[8]
                    end = mid;                //end may be the answer that's why we're not taking end = mid-1 as mid is > mid+1
-                                            // End your range and seek for element in right
+                                            // End your range and seek for element in current range
                                             // Search in the left for bigger possible ans
 
         }else {                               //We're in the Increasing side i.e. arr[2] < arr[3]
@@ -26,7 +26,6 @@ public static int binarySearch(int [] arr){
 }
 public static void main(String[] args){
     int[] arr = {0,1,2,3,14,15,19,22,23,29,27,25,23,22,11,9,3,0};
-    Scanner sc = new Scanner(System.in);
     System.out.println("Max Index: "+binarySearch(arr)+"\nMax value: "+arr[binarySearch(arr)]);
 }
 
