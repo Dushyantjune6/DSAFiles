@@ -1,0 +1,16 @@
+import java.util.*;
+public class EvenOddIdentificationUsingLSB
+{
+    public static boolean isOdd(int test){
+            return (test & 1) == 1;     //This will add a bit to LSB and only 1&1 == 1 if last bit was 1 it will be true i.e. odd else even
+    }
+	public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        int test = sc.nextInt();
+	        if(isOdd(test)){
+	            System.out.println("Is odd!");
+	        }else{
+	            System.out.println("Is even!");
+	        }
+	}
+}
