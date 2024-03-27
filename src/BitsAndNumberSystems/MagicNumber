@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+    public static int magicNumber(int n, int base){
+         int ans = 0;
+         int newBase = base;
+        while(n > 0){
+            int lastBit = n&1;  // Finding the nth bit
+            n = n>>1;  //Right shifting to keep moving towards the MSB from LSB
+            ans += lastBit*base;
+            base = base*newBase;  //Increasing the power of base each time
+        }
+         return ans;
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the base and terms: ");
+        int base = sc.nextInt();
+        int term = sc.nextInt();
+        System.out.println(magicNumber(term, base));
+    }
+}
