@@ -1,3 +1,5 @@
+package binarysearch;
+
 public class OrderDiagnosticBinarySearch {
     public static int orderDiagnosticBinarySearchMethod(int[] arr, int target){
         boolean isAscending = false;

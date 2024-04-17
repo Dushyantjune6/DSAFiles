@@ -1,3 +1,5 @@
+package binarysearch;
+
 import java.util.*;
 public class FloorProblem {
 
@@ -24,7 +26,7 @@ public class FloorProblem {
         return arr[end];
     }
     public static void main(String[] args){
-        int[] arr = {12,12,13,16,18,19,22,25,27,98,103,224};
+        int[] arr ={1 ,2 ,8 ,10 ,11 ,12 ,19};
         Scanner sc = new Scanner(System.in);
         int target =sc.nextInt();
 

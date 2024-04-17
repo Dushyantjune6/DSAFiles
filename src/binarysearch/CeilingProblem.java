@@ -1,3 +1,5 @@
+package binarysearch;
+
 import java.util.Scanner;
 
 public class CeilingProblem {
@@ -24,7 +26,7 @@ public class CeilingProblem {
     }
     public static void main(String[] args){
 
-        int[] arr = {1,2,3,5,9,81,89,90,98};
+        int[] arr = {11,12,32,51,60,71,82};
         Scanner sc = new Scanner(System.in);
         int target = sc.nextInt();
 

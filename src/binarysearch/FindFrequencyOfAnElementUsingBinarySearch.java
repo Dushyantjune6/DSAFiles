@@ -1,3 +1,5 @@
+package binarysearch;
+
 import java.util.Scanner;
 
 public class FindFrequencyOfAnElementUsingBinarySearch {

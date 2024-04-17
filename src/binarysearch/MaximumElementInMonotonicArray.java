@@ -1,4 +1,5 @@
-import java.util.*;
+package binarysearch;
+
 public class MaximumElementInMonotonicArray {
 public static int binarySearch(int [] arr){
 

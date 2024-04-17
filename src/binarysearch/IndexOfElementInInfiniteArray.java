@@ -1,3 +1,5 @@
+package binarysearch;
+
 import java.util.*;
 public class IndexOfElementInInfiniteArray {
     public static int binarySearch(int[] arr, int target, int start, int end){
