@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class FactorsOfANumber {
+    static List<Integer> getFactors(int n) {
+        List<Integer> factors = new ArrayList<>();
+
+        for (int i = 1; i * i <= n; i++) {
+            if (n % i == 0) {
+                factors.add(i);
+                if (i != n / i) {
+                    factors.add(n / i);
+                }
+            }
+        }
+
+        Collections.sort(factors);
+        return factors;
+    }
+
+    public static void main(String[] args) {
+        int n = 36;
+        System.out.println(getFactors(n));
+    }
+}
