@@ -1,0 +1,28 @@
+
+
+public class NLargestElement
+{
+	public static void main(String[] args) {
+		int[] arr = {145,2,3,55,6,11,123,90};
+		int first = Integer.MIN_VALUE;
+		int second = Integer.MIN_VALUE;
+		int third = Integer.MIN_VALUE;
+		
+		for( int num : arr){
+		    if(num > first){
+		        second = first;
+		        third = second;
+		        first = num;
+		    }
+		    else if(num > second && num != first){
+		        third = second;
+		        second = num;
+		    }else if(num > third && num != first && num != second){
+		        third = num;
+		    }
+		}
+		System.out.println("First: "+ first);
+			System.out.println("second: "+ second);
+				System.out.println("third: "+ third);
+	}
+}
